@@ -1,29 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Node
-{
+{ // class and object daoer uddoso holo ja node modda val+nextp aksatha asa ti ...
 public:
     int val;
-    Node *next;
+    Node *next; // akna amier next pointer dara try kora hoycaa
+
+    Node(int val)
+    {
+        this->val = val; // this use kora karon hocca para meteer amir val and next agola kar kar ti use hoyca ..
+        this->next = NULL;
+    }
 };
 int main()
 {
-    Node a, b, c;
-    a.val = 10;
-    b.val = 20;
-    c.val = 30;
+    Node a(10), b(20), c(30);
 
     a.next = &b;
     b.next = &c;
-    c.next = NULL;
 
-    cout<<a.val<<endl;
-    // cout<<(*a.next).val<<endl;
-    cout<<a.next->val<<endl;
-    cout<<a.next->next->val<<endl;
-    cout<<(*a.next).next.val<<endl;
-    // cout<<(*a.next). 
-
-
+    cout << a.val << " " << b.val << " " << c.val << endl;
+    cout << (*a.next).val << endl;
     return 0;
 }
