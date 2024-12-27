@@ -18,7 +18,7 @@ int main()
     Node *b = new Node(30);
     // Node* d=new Node(40);
 
-    (*head).next=a;  
+    // (*head).next=a;  
     head->next = a;
     a->next = b;
 

@@ -1,28 +1,40 @@
-#include <bits/stdc++.h>
-using namespace std;
-class Node
-{
-public:
+ #include<bits/stdc++.h>
+ using namespace std;
+ class Node
+ {
+   public:
    int val;
-   Node *next;
+   Node* next;
    Node(int val)
    {
       this->val=val;
       this->next=NULL;
    }
-};
-int main()
-{
-   Node a(10), b(20), c(30);
- 
+ };
+ int main()
+ {
+   Node*head=new Node(10);
+   Node*b=new Node(20);
+   Node*c=new Node(30);
 
-   a.next = &b;
-   b.next = &c;
-   // c.next = NULL;
+    
+   head->next=b;
+   b->next=c;
 
-   cout << a.val << endl;
-   cout << (*a.next).val << endl;            
-   cout<<a.next->next->val<<endl;             
+   // cout<<head->val<<endl;
+   // cout<<head->next->val<<endl;
+   // cout<<head->next->next->val<<endl;
+   Node*temp=head; // quray 27 line
+   while(temp!=NULL)
+   {
+      cout<<temp->val<<endl;
+      temp=temp->next;
+   }
+
+   
+
+
+
 
    return 0;
-}
+ }
