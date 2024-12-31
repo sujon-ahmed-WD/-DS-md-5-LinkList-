@@ -1,0 +1,1 @@
+{"name":"Local: pb1","url":"d:\\CSE-Fundamantal\\Data_Strcture\\week2\\Asiment-2\\pb1.cpp","tests":[{"id":1735643387292,"input":"2 4 1 5 3 6 -1","output":"5"},{"id":1735643412499,"input":"2 -1","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CSE-Fundamantal\\Data_Strcture\\week2\\Asiment-2\\pb1.cpp","group":"local","local":true}
