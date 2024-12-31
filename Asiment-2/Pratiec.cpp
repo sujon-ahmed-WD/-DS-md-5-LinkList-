@@ -24,6 +24,16 @@ void setlist(Node *&head, Node *&tail, int val)
     tail->next = newnode;
     tail = newnode;
 }
+int samevalue(Node *head)
+{
+    Node *temp = head;
+    cout << temp->val;
+}
+int samevalue1(Node *head)
+{
+    Node *temp = head;
+    cout << temp->val;
+}
 
 int size(Node *head)
 {
@@ -48,27 +58,24 @@ int print(Node *head)
 }
 bool sameornot(Node *head, Node *head1)
 {
-    Node*temp=head;
-    Node*temp1=head1;
+    Node *temp = head;
+    Node *temp1 = head1;
     int len = size(head);
     int len1 = size(head1);
     if(len!=len1)
     {
-        return false ;
+        return false;
     }
     else
     {
-        for(int i=0; i<len;i++)
+        for(int i=0; i<len; i++)
         {
             if(temp->val!=temp1->val)
             {
                 return false;
             }
-            temp=temp->next;
-            temp1=temp1->next;
         }
     }
-    return true;
 }
 int main()
 {
